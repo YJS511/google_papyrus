@@ -1,0 +1,224 @@
+/* 전체 페이지에 기본 글꼴과 배경색, 여백 설정 */
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* 제목 스타일 */
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 30px;
+  color: #333;
+}
+
+/* 컨텐츠 박스 스타일 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+/* 셀렉터와 입력 필드 영역 공통 스타일 */
+.selector-row,
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+/* 셀렉터 라벨 스타일 */
+.selector-row label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* 셀렉터 select 박스 스타일 */
+.selector-row select {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 180px;
+}
+
+/* 시트 범위 텍스트 스타일 */
+.selector-row span {
+  margin-left: 15px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* 입력 필드 스타일 */
+.input-row input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 10px;
+  flex: 1;
+  min-width: 180px;
+}
+
+/* 버튼 스타일 */
+.input-row button {
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* 버튼 hover 시 스타일 */
+.input-row button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* 비활성화된 버튼 스타일 */
+.input-row button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* 리스트 전체 스타일 초기화 */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 리스트 아이템 스타일 */
+li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* 리스트 아이템 hover 시 배경색 변경 */
+li:hover {
+  background-color: #f1f1f1;
+}
+
+/* 선택된 리스트 아이템 스타일 */
+li.selected {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.app-header {
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #333333;
+}
+
+.app-header p {
+  margin: 10px 0 0;
+  color: #666666;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2em;
+  color: #666666;
+  background-color: #ffffff;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2em;
+  color: #dc3545;
+  background-color: #ffffff;
+}
+
+.select-container {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+select:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.sheet-data {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
